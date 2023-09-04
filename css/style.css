@@ -1,0 +1,141 @@
+:root {
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+    --color-yellow: #FBFF44;
+    --color-darkblue: #053B50;
+    --color-darkyellow: #dcde47;
+
+    --shadow-md: 0 4px 24px rgba(0, 0, 0, 0.3);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: arial;
+}
+
+/* navbar */
+nav {
+    position: fixed;
+    display: flex;
+    gap: 150px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 61%);
+    width: 100%;
+    height: 90px;
+    z-index: 9999;
+}
+
+nav .brand {
+    font-size: 30px;
+    color: var(--color-white);
+    margin-left: 100px;
+}
+
+nav .brand span {
+    color: var(--color-yellow);
+}
+
+nav .nav-menu ul {
+    display: flex;
+    gap: 70px;
+    list-style: none;
+}
+
+nav .nav-menu ul a {
+    color: var(--color-white);
+    font-size: 22px;
+    text-decoration: none;
+    transition: .2s;
+}
+
+nav .nav-menu ul a:hover {
+    color: var(--color-yellow);
+}
+
+.container {
+    margin: 0 100px;
+}
+
+/* header */
+header {
+    display: flex;
+    align-items: center;
+    background: url(../image/bglove.jpg);
+    background-size: cover;
+    background-position-y: -100px;
+    height: 100vh;
+}
+
+header .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+header .hero-title {
+    color: var(--color-white);
+    font-size: 30px;
+    margin-bottom: 40px;
+    text-shadow: var(--shadow-md);
+}
+
+header .hero-title span {
+    color: var(--color-yellow);
+}
+
+header .hero-caption {
+    color: var(--color-white);
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    text-shadow: var(--shadow-md);
+}
+
+header .hero-button button {
+    color: var(--color-black);
+    background-color: var(--color-yellow);
+    border: none;
+    box-shadow: var(--shadow-md);
+    border-radius: 5px;
+    font-size: 28px;
+    font-weight: 700;
+    width: 250px;
+    height: 65px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+header .hero-button button:hover {
+    background-color: var(--color-darkyellow);
+}
+
+header .hero-image {
+    position: relative;
+}
+
+header .hero-image img {
+    width: 528px;
+    height: 22rem;
+    border-radius: 50px;
+    object-fit: cover;
+    box-shadow: var(--shadow-md);
+}
+
+header .hero-image .image_1 {
+    position: absolute;
+    top: -20px;
+    left: 200px;
+    z-index: 5;
+    cursor: pointer;
+    transition: .5s;
+}
+header .hero-image .image_2 {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    z-index: 8;
+    cursor: pointer;
+    transition: .5s;
+}
