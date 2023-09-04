@@ -62,10 +62,9 @@ nav .nav-menu ul a:hover {
 header {
     display: flex;
     align-items: center;
-    background: url(../image/bglove.jpg);
-    background-size: cover;
-    background-position-y: -100px;
+    background: var(--color-darkblue);
     height: 100vh;
+    overflow: hidden;
 }
 
 header .container {
@@ -125,7 +124,7 @@ header .hero-image img {
 
 header .hero-image .image_1 {
     position: absolute;
-    top: -20px;
+    top: -70px;
     left: 200px;
     z-index: 5;
     cursor: pointer;
